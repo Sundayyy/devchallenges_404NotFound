@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 77px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-family: "Inconsolata";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.content {
+  margin-top: 100px;
+  display: flex;
+  height: calc(100vh - 224px);
+}
+
+.image-error {
+  width: 539.22px;
+  height: 447.43px;
+  cursor: pointer;
+}
+
+.right-content {
+  margin: 0 119px;
+}
+
+.error-title {
+  font-family: "Space Mono";
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+}
+
+.error-content {
+  font-family: "Space Mono";
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  padding-top: 36px;
+  color: #4f4f4f;
+}
+
+.btn-back-to-home {
+  width: 216px;
+  height: 68px;
+  margin-top: 64px;
+  text-align: center;
+  font-family: "Space Mono";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  background: #333333;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.btn-back-to-home > span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #c62828;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.btn-back-to-home:hover > span {
+  transform: translateY(0) scale(2);
+}
+
+.btn-back-to-home > span:nth-child(1) {
+  --n: 1;
+}
+
+.btn-back-to-home > span:nth-child(2) {
+  --n: 2;
+}
+
+.btn-back-to-home > span:nth-child(3) {
+  --n: 3;
+}
+
+.btn-back-to-home > span:nth-child(4) {
+  --n: 4;
+}
+
+.crate-by {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #0984e3;
+}
